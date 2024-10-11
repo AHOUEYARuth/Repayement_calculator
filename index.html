@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | Job Listings</title>
+    <link rel="icon" href="assets/images/favicon-32x32.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="field_section">
+            <div class="text">
+                <h3>Mortegage Calculator</h3>
+                <a href="">Clear All</a>
+            </div>
+            <form action="" id="field">
+                <label for="mortgage-amount">Mortegage Amount</label>
+                <div class="input">
+                    <div>$</div>
+                    <input type="number" id="mortgage-amount">
+                </div>
+                <div class="t">
+                    <div class="term">
+                        <label for="mortgage-term">Mortegage Term</label>
+                        <div class="year">
+                            <input type="number" id="mortgage-term">
+                            <div>years</div>
+                        </div>
+                    </div>
+                    <div class="rate">
+                        <label for="interest-rate">Interest Rate</label>
+                        <div class="year">
+                            <input type="number" id="interest-rate">
+                            <div>%</div>
+                        </div>
+                    </div>
+                </div>
+                <label for="mortgage-type">Mortegage Type</label>
+                <div class="type">
+                    <div class="card">
+                        <div class="card_content"></div>
+                    </div>
+                    <span>Repayement</span>
+                </div>
+                <div class="type">
+                    <div class="card">
+                        <div class="card_content"></div>
+                    </div>
+                    <span>Interest Only</span>
+                </div>
+            </form>
+            <button id="btn">
+                <img src="assets/images/icon-calculator.svg" alt="">
+                <span>Calculate Repayement</span>
+            </button>
+        </div>
+        <div class="result_section">
+            <div class="initial">
+                <img src="assets/images/illustration-empty.svg" alt="">
+                <h3>Results shown here</h3>
+                <p>
+                    <span>Complete the form and click "calculate repayements" to</span>
+                    <span class="mt">see what your monthly repayements would be</span>
+                </p>
+            </div>
+            
+            <div class="results">
+                <div class="result_text">
+                    <h3>Your results</h3>
+                    <p>Your results are shown below based on the information you provided.To adjust the results edit the form and click "calculate repayements" again</p>
+                </div>
+                <div class="results_card">
+                    <p>Your monthly repayements</p>
+                    <div class="month_repayement">0</div>
+                    <p>Total you'll repay over the term</p>
+                    <div class="total">0</div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

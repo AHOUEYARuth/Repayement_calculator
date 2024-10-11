@@ -1,0 +1,219 @@
+@font-face {
+    font-family: plusJ;
+    src: url(assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+*{
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: hsl(202, 86%, 94%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow-x: hidden;
+    font-family: plusJ;
+    font-size: 13px;
+}
+.container{
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    height: 70%;
+    border-radius: 20px;
+}
+.field_section{
+    padding: 30px;
+    width: 300px;
+    padding-right: 40px;
+}
+.field_section .text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+a:visited , a:active{
+    color: inherit;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+.input{
+   display: flex;
+   align-items: center;
+   width: 99%;
+   border: 1px solid  hsl(200, 24%, 40%);
+   border-radius: 8px;
+}
+.input input{
+   border: none;
+   outline: none;
+}
+.input div{
+    background-color:  hsl(202, 86%, 94%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 40px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+form input{
+   /*  margin-bottom: 20px; */
+    padding: 10px 5px;
+    width: 100%;
+    border: 1px solid  hsl(200, 24%, 40%);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .term input::placeholder , .rate input::placeholder{
+    text-align: end;
+    width: 30px;
+    background-color: hsl(202, 86%, 94%);
+} */
+.term , .rate{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+/* .term input , .rate input{
+   width: 130px;
+} */
+.year{
+    display: flex;
+    align-items: center;
+    width: 130px;
+    border: 1px solid  hsl(200, 24%, 40%);
+    border-radius: 8px;
+}
+.year input{
+    border: none;
+    outline: none;
+}
+.year div{
+    background-color: hsl(202, 86%, 94%);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 80px;
+}
+.rate .year div{
+    width: 35px;
+}
+.t{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.type{
+    width: 96%;
+    border: 1px solid   hsl(200, 24%, 40%);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 5px;
+    border-radius: 8px;
+}
+.type .card{
+    border: 1px solid #000;
+    border-radius: 30px;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card_content{
+    background-color: hsl(61, 70%, 52%);
+    height: 8px;
+    width: 8px;
+    border-radius: 30px;
+    display: none;
+}
+button{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    padding: 5px 30px;
+    background-color: hsl(61, 70%, 52%);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer; 
+}
+.result_section , .initial{
+    height: 100%;
+    background-color: hsl(202, 55%, 16%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 400px;
+    border-bottom-left-radius: 70px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.initial h3{
+    color: hsl(0, 0%, 100%);
+}
+.initial p{
+    color: #d6d4d4;
+    display: flex;
+    flex-direction: column;
+}
+.initial p .mt{
+    margin-left: 30px;
+}
+.results{
+    padding: 30px;
+    color: #fff;
+}
+.result_text p{
+    margin-top: 10px;
+    color: #d6d4d4;
+}
+.results_card{
+    border-top: 2px solid hsl(61, 70%, 52%);
+    margin-top: 30px;
+    background-color:  hsl(202, 61%, 7%);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+}
+.month_repayement{
+    color: hsl(61, 70%, 52%);
+    font-size: 30px;
+    font-weight: 700;
+    border-bottom: 1px solid #7c7979;
+    padding-bottom: 20px;
+}
+.total{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+
+}
+.results{
+    display: none;
+}
+.type:hover{
+    border: 1px solid hsl(61, 70%, 52%);
+}
+.year:hover , .input:hover{
+    border: 1px solid hsl(202, 55%, 16%);
+}
